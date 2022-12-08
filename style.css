@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Manrope:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+button {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  background-color: hsl(217deg, 19%, 24%);
+  padding: 1.25rem;
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 0.1px);
+  text-align: center;
+}
+
+.container {
+  background: hsl(217deg, 19%, 38%);
+  position: relative;
+  padding: 1.25rem 1.25rem 3rem;
+  color: #fff;
+  border-radius: 6px;
+}
+.container h1 {
+  color: hsla(85deg, 86%, 48%, 0.698);
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.4rem;
+}
+.container p {
+  font-size: 24px;
+  color: hsl(193deg, 38%, 86%);
+  padding-bottom: 2rem;
+  line-height: 1.5;
+}
+.container picture img {
+  background: hsl(217deg, 19%, 38%);
+  position: relative;
+}
+.container picture::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  background: hsl(193deg, 38%, 86%);
+  right: 1.25rem;
+  bottom: 3.8rem;
+  display: block;
+  z-index: 100;
+}
+.container picture::after {
+  content: "";
+  position: relative;
+  width: 45%;
+  height: 1px;
+  background: hsl(193deg, 38%, 86%);
+  left: 0;
+  bottom: 0.74rem;
+  display: block;
+}
+.container button {
+  background-color: hsla(85deg, 86%, 48%, 0.698);
+  padding: 1rem;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+.container button:hover {
+  background-color: hsl(150deg, 59%, 54%);
+}
+
+.credits {
+  margin-top: 3rem;
+}
+.credits p {
+  color: hsl(193deg, 38%, 86%);
+  letter-spacing: 2px;
+}
+.credits p a {
+  color: hsla(85deg, 86%, 48%, 0.698);
+  font-weight: 300 !important;
+}
+
+@media (min-width: 500px) {
+  .container {
+    max-width: 480px;
+  }
+}/*# sourceMappingURL=style.css.map */
